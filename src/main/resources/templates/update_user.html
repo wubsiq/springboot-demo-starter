@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charsrt="UTF-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0">
+    <title>编辑用户</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">编辑用户</h1>
+
+        <form th:action="@{/saveUser}" th:object="${user}" method="post">
+            <!--隐藏字段用于传递用户ID-->
+            <input type="hidden" th:field="*{id}">
+
+            <idv class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" class="form-control" id="name" th:field="*{name}" placeholer="请输入姓名" required>
+            </idv>
+
+            <div class="form-group">
+                <label for="email">邮箱:</label>
+                <input type="email" class="form-control" id="email" th:field="*{email}" placeholder="请输入邮箱" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">更新</button>
+            <a th:href="@{/}" class="btn btn-secondary">返回首页</a>
+
+        </form>
+    </div>
+</body>
+
+</html>
