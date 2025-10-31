@@ -37,7 +37,5 @@ spring-boot, spring-data-jpa, thymeleaf, mysql, java, beginner, demo
 
 ## 许可证
 MIT（可根据需要替换为其他许可证）
-<img width="2559" height="1371" alt="屏幕截图 2025-10-31 131736" src="https://github.com/user-attachments/assets/446c4031-16b6-4775-9be9-43716b079d40" />
-<img width="2559" height="1377" alt="屏幕截图 2025-10-31 131748" src="https://github.com/user-attachments/assets/b9e58845-39ae-447f-8231-496420a4c3d5" />
-<img width="2559" height="1377" alt="屏幕截图 2025-10-31 131757" src="https://github.com/user-attachments/assets/55081dc3-a556-495e-b1b3-3bfc7ef3fb5d" />
+
 
